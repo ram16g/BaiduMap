@@ -143,4 +143,7 @@
       <Name>BaiduMap</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+  </ItemGroup>
 </Project>

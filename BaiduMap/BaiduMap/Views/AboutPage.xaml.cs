@@ -1,6 +1,7 @@
 ﻿using BaiduMap.Native;
 using System;
 using System.ComponentModel;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,7 +13,7 @@ namespace BaiduMap.Views
         {
             InitializeComponent();
             string baseUrl = DependencyService.Get<IBaseUrl>().Get();
-            webView.Source = baseUrl + "index.html";
+            webView.Source = Path.Combine(baseUrl,"index.html");
         }
     }
 }
